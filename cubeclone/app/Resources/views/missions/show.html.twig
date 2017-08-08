@@ -1,0 +1,22 @@
+<body>
+
+<article>
+  <header>
+    <strong>
+    {{mission.title}}
+    </strong>
+  </header>
+<a href="{{path('missions_path')}}">&larr; Liste des missions</a>
+<p> contenu: {{mission.description}}</p>
+
+<ul>
+  <li>
+    <strong> date:</strong>{{mission.dateAs | date()}}
+  </li>
+<input type="submit" name="done">
+
+</ul>
+<a href="{{path('missions_path')}}">&larr; Liste des missions</a>
+</article>
+
+</body>
